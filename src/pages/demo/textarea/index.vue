@@ -4,7 +4,7 @@
       <el-row :gutter="20">
         <el-col :span="4">
           <el-button type="success" @click="dialogVisible = true">
-            <d2-icon name="file-o"/>
+            <d2-icon name="list-ul"/>
             输入多行文本进行预测
           </el-button>
         </el-col>

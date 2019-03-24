@@ -6,7 +6,7 @@
         <el-col :span="4">
           <el-upload :before-upload="handleUpload" action="default">
             <el-button type="primary">
-              <d2-icon name="file-o"/>
+              <d2-icon name="file-text"/>
               选择要导入的文件
             </el-button>
           </el-upload>
@@ -15,7 +15,10 @@
           <el-button type="success" @click="handlePrediction">开始预测</el-button>
         </el-col>
         <el-col :span="3" style="width:160px;" v-if="isDownload">
-          <el-button type="danger" @click="handleDownload">导出excel</el-button>
+          <el-button type="danger" @click="handleDownload">
+            <d2-icon name="download"/>
+            导出excel
+          </el-button>
         </el-col>
       </el-row>
       <span class="text">支持导入 tsv，csv，xlsx 文件</span>
