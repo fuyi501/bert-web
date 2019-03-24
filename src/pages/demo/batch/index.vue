@@ -38,7 +38,7 @@ import axios from 'axios'
 const searchBatchUrl = 'http://119.23.30.32:8360/index/search'
 const options = {
   filename: '预测结果',
-  fieldSeparator: '\t',
+  fieldSeparator: ',',
   quoteStrings: '',
   decimalSeparator: '.',
   // showLabels: true, 
