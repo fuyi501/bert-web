@@ -94,14 +94,15 @@ export default {
       } else {
         let sendString = ''
         for(let i in this.data) {
-          sendString += this.data[i].text + '\n'
+          console.log(this.data[i].type)
+          sendString += this.data[i].type + '\n'
         }
-        // console.log(sendString)
+        // console.log('sendString', sendString)
         this.searchBatch(sendString)
       }
     },
     searchBatch (sendString) {
-      console.log('批量查询数据', this.data)
+      console.log('批量查询数据', this.data, sendString)
       this.batchLoading = true
       axios.post(searchBatchUrl, {
         searchInfo: sendString
