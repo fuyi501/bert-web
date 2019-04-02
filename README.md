@@ -13,3 +13,11 @@
 ![](http://img.fuwenwei.com/blog/20190402235059.png)
 
 ![](http://img.fuwenwei.com/blog/20190402235201.png)
+
+## 批量上传文件测试
+
+选择要上传的文件，比如 `data/test.tsv` 文件，上传完成后点击开始预测，预测完成后可以下载预测结果。
+
+![](http://img.fuwenwei.com/blog/20190403004140.png)
+
+![](http://img.fuwenwei.com/blog/20190403004030.png)
