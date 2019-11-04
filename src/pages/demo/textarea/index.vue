@@ -18,7 +18,7 @@
       @close="dialogVisible = false">
       <el-input
         type="textarea"
-        autosize
+        :autosize="{ minRows: 20, maxRows: 50}"
         placeholder="请输入内容，每行一句"
         v-model="textarea">
       </el-input>

@@ -15,7 +15,17 @@ module.exports = {
   lintOnSave: true,
   devServer: {
     disableHostCheck: true,
-    publicPath // 和 publicPath 保持一致
+    publicPath, // 和 publicPath 保持一致
+    proxy: {
+      '/api': {
+        target: 'http://xinjiang.boyd.hylanda.com/open/text/suspicioustext.html',
+        ws: true,
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': ''
+        }
+      }
+    }
   },
   css: {
     loaderOptions: {

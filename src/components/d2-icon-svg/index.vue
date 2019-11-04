@@ -1,7 +1,7 @@
 <template>
   <img
-    src="./image/logo.png"
-    style="width: 500px;">
+    src="./image/all.png"
+    style="width: 400px;">
 </template>
 
 <script>
