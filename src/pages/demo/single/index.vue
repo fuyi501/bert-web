@@ -68,6 +68,9 @@ export default {
       resList: []
     }
   },
+  mounted () {
+    this.createToken()
+  },
   methods: {
     cleanContent () {
       this.singleText = ''
